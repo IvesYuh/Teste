@@ -3,34 +3,104 @@
     <body>
         <style>
 #background1 {
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
     background-color: rgb(52, 52, 175);
     background-image: linear-gradient(45deg, rgb(15, 15, 95), rgb(155, 0, 0));
 }
         </style>
         <div id="background1">
 <nav class="nav_tabs" style="color:aliceblue">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        body{
+            font-family: Arial;
+        }
+
+        .nav_tabs{
+            width: 600px;
+            height: 600px;
+            margin: 100px auto;
+            background-color: rgb(79, 79, 218);
+            position: relative;
+        }
+        .nav_tabs ul{
+            list-style: none;
+        }
+        .nav_tabs ul li{
+            float:left
+        }
+.nav_tabs label{
+    height: 15px;
+    width: 100px;
+    padding: 25px;
+    background-color: rgb(243, 26, 26);
+    display: block;
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: center;
+
+}
+.rd_tabs:checked~label{
+    background-color:rgb(97, 12, 97);
+}
+.rd_tabs{
+    display: none;
+}
+.content{
+    border-top: 5px solid rgb(97, 12, 97);
+    background-color:rgb(79, 79, 218);
+    display: none;
+    position: absolute;
+    height: 320px;
+    width: 600px;
+    left: 0px;
+}
+.rd_tabs:checked~.content{
+    display: block;
+}
+    </style>
     <ul>
         <li>
-            <input type="radio" name="tabs" class="rd_tabs" id="tab1">
+            <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
             <label for="tab1">Tab 1</label>
-            <div class="content"></div>
+            <div class="content">
+                <article>
+                        
+                </article>
+            </div>
         </li>
         <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab2">
             <label for="tab2">Tab 1</label>
-            <div class="content"></div>
+            <div class="content">    
+                <article>
+                    
+                </article>
+            </div>
         </li>
         <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab3">
             <label for="tab3">Tab 1</label>
-            <div class="content"></div>
+            <div class="content">  
+                <article>
+                    
+                </article>
+            </div>
         </li>
         <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab4">
             <label for="tab4">Tab 1</label>
-            <div class="content"></div>
+            <div class="content">
+                <article>
+                    
+                </article>
+            </div>
         </li>
     </ul>
 </nav>
