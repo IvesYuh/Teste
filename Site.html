@@ -11,7 +11,7 @@
 }
         </style>
         <div id="background1">
-<nav class="nav_tabs" style="color:rgb(224, 206, 206)" align="end">
+<nav class="nav_tabs" style="color:rgb(224, 206, 206)">
     <style>
         *{
             margin: 0;
@@ -27,7 +27,7 @@
             width: 600px;
             height: 600px;
             margin: 100px auto;
-            background-color: rgb(79, 79, 218);
+            background-image: linear-gradient(To right,rgb(6, 6, 95),rgb(255, 166, 0));
             position: relative;
         }
         .nav_tabs ul{
@@ -40,7 +40,7 @@
     height: 15px;
     width: 100px;
     padding: 25px;
-    background-color: rgb(243, 26, 26);
+    background-color: rgb(99, 0, 119);
     display: block;
     color: whitesmoke;
     cursor: pointer;
@@ -48,14 +48,14 @@
 
 }
 .rd_tabs:checked~label{
-    background-color:rgb(97, 12, 97);
+    background-image: linear-gradient(45deg, rgb(75, 7, 39), rgb(24, 8, 241));
 }
 .rd_tabs{
     display: none;
 }
 .content{
     border-top: 5px solid rgb(97, 12, 97);
-    background-color:rgb(79, 79, 218);
+    background-image: linear-gradient(To right,rgb(6, 6, 95),rgb(255, 166, 0));
     display: none;
     position: absolute;
     height: 320px;
@@ -68,26 +68,45 @@
     </style>
     <ul>
         <li>
-            <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
-            <label for="tab1">Tab 1</label>
+            <input type="radio" name="tabs" class="rd_tabs" id="Tab1" checked>
+            <label for="Tab1">Perfil</label>
             <div class="content">
-                <article>
-                        
+                <article style="font-family:'Lucida Sans', 'Lucida Sans Regular'; font-size: 130%; margin-left: 10%; margin-right: 10%; color: rgb(229, 200, 243);">
+                            <h style="margin: 30%; font-size: 200%;">
+                                    Aqui está
+                            </h>
+                            <br>
+                            <br>
+                           <p style="">Meu nome é Ives Yuh e eu tenho muito interesse em TI. Tenho uma grande curiosidade em diversas
+                           áreas como: Ciência de Dados, Desenvolvimento de Software de alto desempenho, DevOps etc.<br>
+                           Estou no 1º ano do Curso de Ciências da Computação e tenho muito a aprender. Caso queira
+                           entrar em contato comigo entre em "Perfil". Obrigado por ler meu portfólio e tenha um bom dia!
+                           </p>
                 </article>
             </div>
         </li>
         <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab2">
-            <label for="tab2">Tab 1</label>
+            <label for="tab2">Contatcs</label>
             <div class="content">    
                 <article>
-                    
+                    <a href="https://www.linkedin.com/in/ives-yuh-kondo-498505265/" target="blank">
+                        <img src="Link.png" alt="Error" style="height: 70px ; width: 70px; margin-left: 15px; margin-top: 20px;"></a>
+                      <br>
+                      <br>
+                        <a href="https://github.com/IvesYuh" target="blank">
+                            <img src="Git.png" alt="Error" style="height: 70px ; width: 70px; margin-left: 15px;"></a>
+                      <br>
+                      <br> 
+                            <a href="https://www.instagram.com/ives_yuh/" target="blank">
+                                <img src="Ig.png" Alt="Error" style="height: 70px ; width: 70px; margin-left: 15px;"></a>
+                                </a>    
                 </article>
             </div>
         </li>
         <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab3">
-            <label for="tab3">Tab 1</label>
+            <label for="tab3">Projects</label>
             <div class="content">  
                 <article>
                     
@@ -96,15 +115,38 @@
         </li>
         <li>
             <input type="radio" name="tabs" class="rd_tabs" id="tab4">
-            <label for="tab4">Tab 1</label>
-            <div class="content">
+            <label for="tab4">Contate-me</label>
+            <div class="content" id="background2">
                 <article>
-                    
+                    <style>
+                        .contact-container {
+                        text-align: center;
+                        padding: 20px;
+                        }
+
+                        a {
+                        display: inline-block;
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        background-color: #560558;
+                        color: rgb(242, 240, 243);
+                        text-decoration: none;
+                        border-radius: 5px;
+                        }
+                    </style>
+                    <div class="contact-container">
+                        <h2 style="color: #f7b1f8;">Entre em contato conosco</h2>
+                        <p style="color: #f7b1f8">Envie-nos um e-mail ou uma mensagem no WhatsApp</p>
+                        <a href="mailto:IvesYuh@edu.umifil.br" target="_blank">Enviar e-mail</a>
+                        <br>
+                        <a href="https://wa.me/43996070707" target="_blank">Enviar mensagem no WhatsApp</a>
+                      </div>
                 </article>
             </div>
         </li>
     </ul>
 </nav>
+                </body>
         </div>  
     </body>
 </html>
